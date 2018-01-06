@@ -1,0 +1,292 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Brian W. Duff}
+\newcommand{\CVTitle}{Brian W. Duff's Resume}
+\newcommand{\CVNote}{Resume compiled on {\today}}
+\newcommand{\CVWebpage}{http://www.brianwduff.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+\linespread{1.15}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+5824 Northumberland Street, Pittsburgh, PA 15217
+\par
+\href{mailto:brian.w.duff@gmail.com}
+{brian.w.duff@gmail.com}
+\,\SubBulletSymbol\,
+(585)\,747-8345
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%
+%% CAREER SUMMARY %%
+%%%%%%%%%%%%%%
+
+\Section
+{Summary}
+{Summary}
+{PDF:Summary}
+
+\Entry
+Motivated \textbf{software engineer} and dedicated team member seeking to solve \textbf{complex problems} using self-reliance, versatility, and research experience developed over 4 years at a startup. 
+
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{Carnegie Mellon University},
+Pittsburgh, Pennsylvania
+\hfill
+\DatestampYMD{2009}{08}{15} --
+\DatestampYMD{2012}{12}{15}
+
+
+\Gap
+\BulletItem
+B.S. in
+Electrical and Computer Engineering
+\begin{Detail}
+\SubBulletItem
+Cumulative GPA: 3.6 / 4.0
+\end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+Senior Software Engineer,
+\textbf{SpiralGen, Inc.}
+\hfill
+\DatestampYMD{2013}{01}{28} --
+\DatestampYMD{2017}{06}{31}
+
+\BigGap
+Reseached, developed, and commercialized the high-performance code-generation tool Spiral.
+
+\BigGap
+
+\BulletItem
+DARPA HACMS (High-Assurance Cyber Military Systems)
+\SubBulletItem
+Researched and developed formally-verified software components for cyber-physical systems.
+\SubBulletItem
+Worked with air and ground, manual and autonomous robots and virtual robots.
+\SubBulletItem
+Released a commercial version of Spiral at IEEE High Performance Extreme Computing Conference.
+
+\BulletItem
+Code generation toolbox for ADAS (Advanced Driver-Assistance Systems)
+\SubBulletItem
+Developed a protype Matlab/Simulink toolbox interface for ADAS control code generation.
+
+\BulletItem
+DARPA BRASS (Building Resource Adaptive Software Systems)
+\SubBulletItem
+Developed software which can autonomously adapt to changes in hardware or libraries.
+\SubBulletItem
+Tested resource adaptation with synthetic apperature radar (SAR) test case.
+
+\BulletItem
+High Performance FFT library for Argonne National Laboratory (ANL)
+\SubBulletItem
+Created, using Spiral, a library of high-performance threaded batch FFTs for use on a supercomputer.
+
+\BulletItem
+Spiral Cloud Interface
+\SubBulletItem
+Developed an online code-generation system using Codebox, Amazon Web Services, and Docker.
+
+
+\BigGap
+\Entry
+Summer Intern,
+\textbf{General Motors Fuel Cell Activities}
+\hfill
+Summers 2011, 2012
+
+\Gap
+\BulletItem
+Operated as interim software build manager with software design team using Simulink code generation.
+\BulletItem
+Researched and applied signal processing techniques to hydrogen fuel cells, scripted analysis in Matlab/Simulink.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\Section
+%{Research Experience}
+%{Research Experience}
+%{PDF:ResearchExperience}
+%
+%\Entry
+%\href{http://www.example.com/my-institute}
+%{\textbf{Institute for Advanced Research}},
+%Science College
+%
+%\Gap
+%\BulletItem
+%Undergraduate Research Student, Science Department
+%\hfill
+%\DatestampYMD{2004}{05}{15} --
+%\DatestampYMD{2005}{05}{15}
+%\begin{Detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+%\SubBulletItem
+%Supervisors:
+%Prof.~Jane~Citizen and
+%Dr~Ann~Yone
+%\SubBulletItem
+%Focus:
+%Climate change, lasers, statistical analysis, data analytics.
+%\end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+
+\Gap
+B. Duff, D. Popovici, T. M. Low, J. Larkin, M. Franusich, F. Franchetti,
+``Quantifying Performance Improvements of Ported Software Using Spiral,''
+\textit{2017 IEEE High Performance Extreme Computing Conference Proceedings}
+
+\Gap
+DOE SBIR Phase I Proposal (awarded) coauthor, ``Security Hardened Cyber Components for Nuclear Power Plants"
+
+
+\endgroup
+
+%%%%%%%%%%%%%%%%%%
+%% PRESENTATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Presentations}
+{Presentations}
+{PDF:Presentations}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+
+B. Duff (speaker), J. Larkin, M. Franusich, F. Franchetti,
+``Automatic Generation of 3D FFTs,"
+\textit{2014 Oil \& Gas HPC Workshop}
+
+\Gap
+Demonstration of CMU team DARPA HACMS capabilities to Pentagon officials,
+\textit{DARPA I2O Demo Day 2014}
+\endgroup
+
+
+%%%%%%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\begingroup
+C, C++, Java, Python, Matlab, Simulink, JavaScript, GAP
+\endgroup
+
+%%%%%%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%
+
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:TechnicalSkills}
+
+\begingroup
+Embedded Systems, High Performance Computing (HPC), Git, Subversion, Linux, Windows, Technical Writing, Controls, Signal Processing, Eclipse RCP, Make, NSIS 
+\endgroup
+
+
+\end{Body}
+\end{document}
