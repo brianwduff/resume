@@ -68,16 +68,16 @@
 \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[10pt,oneside]{article}
+\LoadClass[11pt,oneside]{article}
 
 % Geometry package for page margins.
 \RequirePackage[
 left=0.70in,
 right=0.70in,
 top=0.60in,
-bottom=0.45in,
+bottom=0.0in,
 nohead,
-includefoot]{geometry}
+nofoot]{geometry}
 
 % PDF settings and properties.
 \RequirePackage{hyperref}
